@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "npm run test"
+    }
+  },
+  "openLogOnRun" : "start"
+}
