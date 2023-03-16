@@ -1,7 +1,7 @@
 # simple-mailgun.js
-[![CI](https://github.com/razorUX/simple-mailgun.js/actions/workflows/test.yml/badge.svg)](https://github.com/razorUX/simple-mailgun.js/actions/workflows/test.yml)
-[![codecov](https://github.com/razorUX/simple-mailgun.js/branch/master/graph/badge.svg)](https://github.com/razorUX/simple-mailgun.js)
-[![npm version](https://badge.fury.io/js/simple-mailgun.js.svg)](https://badge.fury.io/js/simple-mailgun.js)
+[![CI](https://github.com/razorUX/SimpleMailgun.js/actions/workflows/test.yml/badge.svg)](https://github.com/razorUX/SimpleMailgun.js/actions/workflows/test.yml)
+[![codecov](/badge.svg?raw=true)](https://github.com/razorUX/SimpleMailgun.js)
+[![npm version](https://badge.fury.io/js/SimpleMailgun.js.svg)](https://badge.fury.io/js/simple-mailgun.js)
 
 A simple, tiny Mailgun client for Node.js.
 (Currently only supports sending emails, will add more features as needed)
@@ -30,9 +30,9 @@ const { createMailgunClient } = require('simple-mailgun.js');
 
 const client = createMailgunClient({
   domain: "mail.example.com",
-	apiKey: "FAKE_API_KEY",
+  apiKey: "FAKE_API_KEY",
 		
-	debugLogging: true // Optional, default to false
+  debugLogging: true // Optional, default to false
 });
 ```
 
@@ -60,6 +60,20 @@ const response = await client.sendMessage({
 You can put whatever params you want into the options object.
 The params will be serialized into a `FormData` and sent to Mailgun's API.
 The full of options you can send is [here](https://documentation.mailgun.com/en/latest/api-sending.html#sending).
+
+## Development
+
+Run tests:
+```
+npm run test
+```
+> Runs Jest in watch mode
+
+Publish new version to NPM:
+
+```
+npm run publish
+```
 
 ## Why _another_ Mailgun client?
 

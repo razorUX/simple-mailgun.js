@@ -1,6 +1,6 @@
 {
   "name": "simple-mailgun.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An easy to use Mailgun client for Node.js",
   "main": "src/main.js",
   "directories": {
