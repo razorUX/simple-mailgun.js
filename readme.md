@@ -1,17 +1,20 @@
 # simple-mailgun.js
 [![CI](https://github.com/razorUX/SimpleMailgun.js/actions/workflows/test.yml/badge.svg)](https://github.com/razorUX/SimpleMailgun.js/actions/workflows/test.yml)
-[![codecov](/badge.svg?raw=true)](https://github.com/razorUX/SimpleMailgun.js)
-[![npm version](https://badge.fury.io/js/SimpleMailgun.js.svg)](https://badge.fury.io/js/simple-mailgun.js)
+[![codecov](https://github.com/razorUX/simple-mailgun.js/raw/master/badge.svg?raw=true)](https://github.com/razorUX/SimpleMailgun.js)
+[![npm version](https://badge.fury.io/js/simple-mailgun.js.svg)](https://badge.fury.io/js/simple-mailgun.js)
+
+https://www.npmjs.com/package/simple-mailgun.js
 
 A simple, tiny Mailgun client for Node.js.
-(Currently only supports sending emails, will add more features as needed)
 
 * 🐤 Tiny wrapper around the Mailgun API
 * ⚙️ Auto-config from environment variables
 * 💬 Optional debug logging
 * 🔁 Retry on HTTP 429 with [truncated exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
+* 🤖 Includes CI with GitHub Actions
 * ✅ 100% test coverage
 
+> 💡 Currently **only** supports sending emails, will add more features as needed)
 
 ## Installation
 
